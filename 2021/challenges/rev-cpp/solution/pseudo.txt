@@ -1,0 +1,67 @@
+0: goto 24;
+
+1: R = 0b11111111 - R;
+2: Z = 1;
+3: R += Z;
+4: R += Z;
+5: if (R == 0) goto 38;
+6: R += Z;
+7: if (R == 0) goto 59;
+8: R += Z;
+9: if (R == 0) goto 59;
+10: error "BUG";
+11: goto 60;
+
+12: X = 1;
+13: Y = 0;
+14: if (X == 0) goto 22;
+15: Z = X;
+16: Z &= B;
+17: if (Z == 0) goto 19;
+18: Y += A;
+19: X *= 2;
+20: A *= 2;
+21: goto 14;
+
+22: A = Y;
+23: goto 1;
+
+24: I = 0;
+25: M = 0;
+26: N = 1;
+27: P = 0;
+28: Q = 0;
+29: B = 0b11100101;
+30: B += I;
+31: if (B == 0) goto 56;
+32: B = 0b10000000;
+33: B += I;
+34: A = {ROM[B][i]};
+35: B = {ROM[I][i]};
+36: R = 1;
+37: goto 12;
+
+38: O = M;
+39: O += N;
+40: M = N;
+41: N = O;
+42: A += M;
+43: B = 0b00100000;
+44: B += I;
+45: C = {ROM[B][i]};
+46: A ^= C;
+47: P += A;
+48: B = 0b01000000;
+49: B += I;
+50: A = {ROM[B][i]};
+51: A ^= P;
+52: Q |= A;
+53: A = 1;
+54: I += A;
+55: goto 29;
+
+56: if (Q == 0) goto 58;
+57: error "INVALID_FLAG";
+58: goto 60;
+59: error "Failed to execute program";
+60: print "Key valid. Enjoy your program!"
