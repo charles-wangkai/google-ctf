@@ -1,3 +1,3 @@
-1. `node solution/password.js`
+1. `node password.js`
 
 > CTF{IJustHopeThisIsNotOnShodan}

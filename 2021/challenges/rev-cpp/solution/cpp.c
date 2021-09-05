@@ -19,26 +19,26 @@
   #define FLAG_3 CHAR_LBRACE
   #define FLAG_4 CHAR_p
   #define FLAG_5 CHAR_r
-  #define FLAG_6 CHAR_i
-  #define FLAG_7 CHAR_t
-  #define FLAG_8 CHAR_e
-  #define FLAG_9 CHAR_UNDERSCORE
-  #define FLAG_10 CHAR_f
-  #define FLAG_11 CHAR_l
-  #define FLAG_12 CHAR_a
-  #define FLAG_13 CHAR_g
-  #define FLAG_14 CHAR_UNDERSCORE
-  #define FLAG_15 CHAR_h
-  #define FLAG_16 CHAR_e
-  #define FLAG_17 CHAR_r
-  #define FLAG_18 CHAR_e
-  #define FLAG_19 CHAR_UNDERSCORE
-  #define FLAG_20 CHAR_p
-  #define FLAG_21 CHAR_l
-  #define FLAG_22 CHAR_e
-  #define FLAG_23 CHAR_a
-  #define FLAG_24 CHAR_s
-  #define FLAG_25 CHAR_e
+  #define FLAG_6 CHAR_3
+  #define FLAG_7 CHAR_p
+  #define FLAG_8 CHAR_r
+  #define FLAG_9 CHAR_0
+  #define FLAG_10 CHAR_c
+  #define FLAG_11 CHAR_e
+  #define FLAG_12 CHAR_s
+  #define FLAG_13 CHAR_s
+  #define FLAG_14 CHAR_0
+  #define FLAG_15 CHAR_r
+  #define FLAG_16 CHAR_UNDERSCORE
+  #define FLAG_17 CHAR_p
+  #define FLAG_18 CHAR_r
+  #define FLAG_19 CHAR_0
+  #define FLAG_20 CHAR_f
+  #define FLAG_21 CHAR_e
+  #define FLAG_22 CHAR_5
+  #define FLAG_23 CHAR_s
+  #define FLAG_24 CHAR_o
+  #define FLAG_25 CHAR_r
   #define FLAG_26 CHAR_RBRACE
   
   // No need to change anything below this line
@@ -3774,10 +3774,10 @@
     #undef S
     #define S 30
     #define B0
-    #define B1
-    #undef B2
-    #define B3
-    #define B4
+    #undef B1
+    #define B2
+    #undef B3
+    #undef B4
     #define B5
     #define B6
     #define B7

@@ -7,7 +7,7 @@ import java.io.InputStreamReader;
 import java.util.Scanner;
 
 public class Search {
-  static final String FILE_NAME = "solution/cpp.c";
+  static final String FILE_NAME = "cpp.c";
   static final String[] ALPHABET = {
     "CHAR_a",
     "CHAR_b",
@@ -75,7 +75,7 @@ public class Search {
     "CHAR_RBRACE",
     "CHAR_UNDERSCORE"
   };
-  static final String PREFIX = "  #define FLAG_4 ";
+  static final String PREFIX = "  #define FLAG_26 ";
 
   public static void main(String[] args) throws Throwable {
     for (String ch : ALPHABET) {
@@ -110,7 +110,7 @@ public class Search {
 
   static String execCmd() throws Throwable {
     ProcessBuilder builder =
-        new ProcessBuilder("gcc", "-Wfatal-errors", "cpp.c").directory(new File("solution"));
+        new ProcessBuilder("gcc", "-Wfatal-errors", "cpp.c").directory(new File("."));
     builder.redirectErrorStream(true);
     Process process = builder.start();
     InputStream is = process.getInputStream();

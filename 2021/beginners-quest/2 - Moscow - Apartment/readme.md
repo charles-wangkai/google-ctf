@@ -1,3 +1,3 @@
-1. `java solution/LogicLock.java`
+1. `java LogicLock.java`
 
 > CTF{BCFIJ}
